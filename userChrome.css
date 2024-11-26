@@ -1,0 +1,46 @@
+/* "userChrome.css" is a custom CSS file that can be used to specify CSS style rules for Floorp's interface (NOT internal site) using "chrome" privileges.
+
+NOTE: You can use the userChrome.css file without change preferences (about:config)
+
+Quote: https://userChrome.org | https://github.com/topics/userchrome */
+
+@charset "UTF-8";
+
+@-moz-document url(chrome://browser/content/browser.xhtml){
+/* Please write your custom CSS under this line*/
+
+/* Tabs customizations */
+tab {
+    font-family: "Roboto" !important;
+    font-size: 14px !important;
+}
+
+#tabbrowser-tabs {
+    --tab-separator-opacity: 0 !important;
+}
+/* #tab-background {	max-height: 50px !important;} */
+:root {
+    --tab-min-height: 38px !important;
+	--tab-max-height: 38px !important;
+}
+
+/* Bookmarks toolbar tuning */
+#PlacesToolbarItems .bookmark-item {
+    font-size: 14.4px !important;
+    font-family: "Roboto" !important;
+
+}
+
+#nav-bar {
+    height: 42px !important; /* Adjust this value to your preferred height */
+    min-height: 42px !important;
+}
+
+
+/* Limiting tabs max width */
+/* .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
+    max-width: 160px !important;
+    min-height: 40px !important;
+} */
+
+}
