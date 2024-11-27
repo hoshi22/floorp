@@ -18,11 +18,18 @@ tab {
 #tabbrowser-tabs {
     --tab-separator-opacity: 0 !important;
 }
+
 /* #tab-background {	max-height: 50px !important;} */
 :root {
     --tab-min-height: 38px !important;
-	--tab-max-height: 38px !important;
+    --tab-max-height: 38px !important;
 }
+
+#TabsToolbar {
+    margin-top: 4px;
+    /* Adjust the value as needed */
+}
+
 
 /* Bookmarks toolbar tuning */
 #PlacesToolbarItems .bookmark-item {
@@ -32,15 +39,13 @@ tab {
 }
 
 #nav-bar {
-    height: 42px !important; /* Adjust this value to your preferred height */
+    height: 42px !important;
+    /* Adjust this value to your preferred height */
     min-height: 42px !important;
 }
 
-
-/* Limiting tabs max width */
-/* .tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
-    max-width: 160px !important;
-    min-height: 40px !important;
-} */
+box[id^='sidebar'] {
+    color: #717d7e !important;
+}
 
 }
